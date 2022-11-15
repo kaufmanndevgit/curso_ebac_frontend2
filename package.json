@@ -1,0 +1,23 @@
+{
+  "name": "curso_ebac_frontend2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/main.scss build/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaufmanndevgit/curso_ebac_frontend2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaufmanndevgit/curso_ebac_frontend2/issues"
+  },
+  "homepage": "https://github.com/kaufmanndevgit/curso_ebac_frontend2#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
