@@ -33,6 +33,23 @@ section .products .product-button {
 section .products .product-button:hover {
   background-color: #4cd137;
 }
+@media screen and (max-width: 1023px) {
+  section .container {
+    max-width: 80%;
+  }
+  section .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section .products {
+    display: block;
+  }
+  section .product-item {
+    margin-bottom: 32px;
+  }
+}
 
 .container {
   max-width: 1024px;
@@ -47,7 +64,7 @@ body li {
   list-style: none;
 }
 body header {
-  background-color: #182C61;
+  background-color: #182c61;
   position: sticky;
   top: 0;
   left: 0;
