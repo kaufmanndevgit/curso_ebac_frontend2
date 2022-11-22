@@ -15,7 +15,7 @@ body {
 @media (max-width: 767px) {
   .container {
     max-width: 70%;
-    background-color: aqua;
+    background-color: #ccc;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
