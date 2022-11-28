@@ -4,26 +4,93 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-body {
-  background-color: #341f97;
-}
 .container {
-  max-width: 960px;
+  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .container {
-    max-width: 70%;
-    background-color: #ccc;
+  .container .products {
+    display: block;
+  }
+  .container .product-item {
+    margin-bottom: 32px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container {
+  .container .container {
     max-width: 80%;
-    background-color: aqua;
+  }
+  .container .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
   }
 }
-h1 {
+body {
+  background-color: #341f97;
+}
+body li {
+  list-style: none;
+}
+body header {
+  background-color: #8e44ad;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+body header .container .menu {
+  display: flex;
+}
+body header .container .menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+body header .container .menu li a {
+  color: #0abde3;
+  text-decoration: none;
+}
+body section {
+  padding: 56px 0;
+}
+body section a {
+  background-color: #0abde3;
+}
+body section p {
+  color: #c8d6e5;
+  font-family: arial;
+  padding-top: 8px;
+}
+body section h2 {
   font-family: console;
+}
+body section h4 {
+  font-family: helvetica;
+  padding-top: 8px;
+  text-align: center;
+}
+body section .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+body section .products .product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+body section .products .product-button {
+  display: block;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
 }
